@@ -1,7 +1,7 @@
-# MDLVC converter
+# MDLVCc
 *v1.0*
 
-A simple tool to convert JHU sequencing center's in-house MDLVC files to .csv files as well as rare germline variants annotating and filtering.
+A simple tool for decoding JHU sequencing center's in-house MDLVC files with variants annotating function.
 
 ##### Please install the below R packages for the running environment:
 ```
