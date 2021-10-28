@@ -1,4 +1,4 @@
-# MDLVCc
+# MDLVCc: A simple MDLVC converter
 A simple tool for decoding JHU sequencing center's in-house MDLVC files as well as variants annotating.    
 *Current version: v1.0.0*
 
