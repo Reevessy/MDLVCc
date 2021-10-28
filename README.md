@@ -1,7 +1,7 @@
 # MDLVCc
 *v1.0*
 
-A simple tool for decoding JHU sequencing center's in-house MDLVC files with variants annotating function.
+A simple tool for decoding JHU sequencing center's in-house MDLVC files as well as variants annotating.
 
 ##### Please install the below R packages for the running environment:
 ```
