@@ -128,18 +128,3 @@ write.table(csv3, file="all_variants_in_ATM&JAK2.csv", sep=",", row.names = FALS
 file.move(c("variants_in_ATM&JAK2.csv", "ref_variants_in_ATM&JAK2.csv"), "./cache/c_variant_formatting", overwrite=TRUE)
 rm("csv1", "csv2", "csv3")
 
-
-
-# Final filtering
-
-csv1 <- read.csv("all_variants_in_ATM&JAK2.csv", header = TRUE, na.strings=c("","NA"))
-csv2 <- filter(csv1 ,Global_AF<0.01 & African_AF<0.01 & Latino_AF<0.01 & 
-                 Ashkenazi_Jewish_AF<0.01 & East_Asian_AF<0.01 & South_Asian_AF<0.01 & 
-                 European_Finnish_AF<0.01 & European_Non_Finnish_AF<0.01 & Other_AF<0.01)
-csv3 <- filter(csv2 ,Global_AF<0.005 & African_AF<0.005 & Latino_AF<0.005 & 
-                 Ashkenazi_Jewish_AF<0.005 & East_Asian_AF<0.005 & South_Asian_AF<0.005 & 
-                 European_Finnish_AF<0.005 & European_Non_Finnish_AF<0.005 & Other_AF<0.005)
-write.table(csv2, file="p<0.01_variants_in_ATM&JAK2.csv", sep=",", row.names = FALSE)
-write.table(csv3, file="p<0.005_variants_in_ATM&JAK2.csv", sep=",", row.names = FALSE)
-rm("csv1", "csv2", "csv3")
-
